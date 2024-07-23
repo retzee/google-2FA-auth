@@ -60,7 +60,7 @@ class GoogleAuthController extends Controller
         $login_security->google2fa_secret = $google2fa->generateSecretKey();
         $login_security->save();
 
-        return redirect('/2fa')->with('success',"Secret key is generated.");
+        return redirect('/2fa')->with('success',"Secret key has been generated.");
     }
 
 
@@ -76,7 +76,7 @@ class GoogleAuthController extends Controller
         if($valid){
             $user->loginSecurity->google2fa_enable = 1;
             $user->loginSecurity->save();
-            return redirect('2fa')->with('success',"2FA is enabled successfully.");
+            return redirect('2fa')->with('success',"Congrats! 2FA has been enabled successfully.");
         }else{
             return redirect('2fa')->with('error',"Invalid verification Code, Please try again.");
         }
@@ -117,7 +117,7 @@ class GoogleAuthController extends Controller
 
         }
         else{
-        	return redirect()->back()->with("error","Your account password must be specified to process request.");
+        	return redirect()->back()->with("error","Your account password must be specified to process disabling request.");
         }
     }
 

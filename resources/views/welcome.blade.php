@@ -9,7 +9,7 @@
     <div class="form-holder">
         <div class="form-content">
             <div class="form-items">
-                 <p><strong>Create an account and then login to explore the 2FA Authentication</strong></p>
+                 <p><strong>Create an account to explore the Google 2FA Authentication</strong></p>
             </div>
         </div>
     </div>

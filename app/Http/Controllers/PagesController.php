@@ -49,7 +49,7 @@ class PagesController extends Controller
 
             if(!empty($user_id)){
                 return redirect()->back()
-                        ->with('success_message', 'Thank you for registering');
+                        ->with('success_message', 'Thank you for registering. Start exploring!');
             } else{
                 return redirect()->back()
                     ->with('error_message', 'Something went wrong while processing submission. Pls try again shortly! ');
@@ -58,7 +58,7 @@ class PagesController extends Controller
         }
         else{
             return redirect()->back()
-                    ->with('error_message', 'All fields are mandatory!');
+                    ->with('error_message', 'Username and password are mandatory.');
         }
  
     }
