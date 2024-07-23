@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 */
 
+
 Route::get('/', ['as' => 'index', 'uses' => 'PagesController@index']);
 
 Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@userLogin']);
@@ -27,6 +28,7 @@ Route::get('/create-user', ['as' => 'create.user', 'uses' => 'PagesController@cr
 Route::post('/create-user', ['as' => 'create.user.process', 'uses' => 'PagesController@createUserProcess']);
 
 Route::group(['middleware' => ['customAuth']], function(){
+	// User Account Routes
 	Route::get('/member/home', ['as' => 'member.home', 'uses' => 'MemberController@home']);
 
 	Route::get('/2fa', ['as' => '2fa', 'uses' => 'GoogleAuthController@show2faForm']);
