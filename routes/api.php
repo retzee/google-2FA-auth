@@ -14,12 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/staff-take-attendance', 'ApiController@staffTakeAttendance');
-Route::post('/staff-attendance-log', 'ApiController@staffAttendanceLog');
-Route::post('/post-student-attendance', 'ApiController@postStudentsAttendance');
-Route::post('/post-subject-attendance', 'ApiController@postSubjectAttendance');
-
-
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
