@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Google 2FA Auth'),
+    'name' => env('APP_NAME', 'Google 2FA Authentication'),
 
     /*
     |--------------------------------------------------------------------------
