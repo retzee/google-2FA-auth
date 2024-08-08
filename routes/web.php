@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+// General Routes
 Route::get('/', ['as' => 'index', 'uses' => 'PagesController@index']);
 
 Route::get('/login', ['as' => 'login', 'uses' => 'LoginController@userLogin']);
