@@ -13,7 +13,7 @@ class Users extends Model
     public $timestamps = true;
 
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token'
     ];
 
     public function loginSecurity()

@@ -8,7 +8,7 @@ class LoginSecurity extends Model
 {
 	protected $fillable = ['user_id'];
 
-    public $timestamps = true;
+    //public $timestamps = true;
 
 	public function user()
 	{
