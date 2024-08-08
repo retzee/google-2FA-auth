@@ -17,10 +17,10 @@
 
                     <div class="row">
                         <div class="col-12 col-sm-6">
-                            <input type="text" name="username" class="form-control" placeholder="Username">
+                            <input type="text" name="username" class="form-control" placeholder="Type your Username">
                         </div>
                         <div class="col-12 col-sm-6">
-                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            <input type="password" name="password" class="form-control" placeholder="Type your Password">
                         </div>
                     </div>
 
