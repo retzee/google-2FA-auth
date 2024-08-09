@@ -50,6 +50,9 @@ class GoogleAuthController extends Controller
     }
 
 
+    /**
+     * Method to generate 2FA secret code
+     */
     public function generate2faSecret(Request $request){
         $user_id = $request->session()->get('user_id');
         
