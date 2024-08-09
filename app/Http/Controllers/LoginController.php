@@ -18,10 +18,18 @@ use Auth;
 
 class LoginController extends Controller
 {
+
+    /**
+     * Method to display login screen
+     */
     function userLogin (){
         return view('login');
     }//end method
 
+
+    /**
+     * Method to login user
+     */
     public function userLoginProcess(Request $request){
 
         $username       = $request->username;
@@ -46,7 +54,7 @@ class LoginController extends Controller
                 }
                 else{
                     return redirect()->back()
-                    ->with('error_message', ' Password is incorrect...');
+                    ->with('error_message', ' Password is incorrect');
                 }
             }
             else{
@@ -56,12 +64,15 @@ class LoginController extends Controller
         }
         else{
             return redirect()->back()
-                    ->with('error_message', 'All fields are mandatory!');
+                    ->with('error_message', 'All fields are mandatory');
         }
     
     }//end method
 
 
+    /**
+     * Method to logout user
+     */
     public function userLogout(Request $request){
         $user_id = $request->session()->get('user_id');
 
