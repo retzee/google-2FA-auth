@@ -19,6 +19,9 @@ use App\LoginSecurity;
 class GoogleAuthController extends Controller
 {
 
+    /**
+     * Method to show 2FA form
+     */
     public function show2faForm(Request $request){
         $user_id = $request->session()->get('user_id');
         
