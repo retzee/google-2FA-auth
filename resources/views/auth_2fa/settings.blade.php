@@ -56,7 +56,7 @@
 
 				                            {!! $data['google2fa_url'] !!}
 				                            <br/><br/>
-				                            2. Enter the pin generated from your Google Authenticator app:<br/><br/>
+				                            2. Enter the code generated from your Google Authenticator app:<br/><br/>
 				                            <form class="form-horizontal" method="POST" action="{{ route('enable2fa') }}">
 				                                {{ csrf_field() }}
 				                                <div class="form-group{{ $errors->has('verify-code') ? ' has-error' : '' }}">
@@ -74,7 +74,7 @@
 
 			                        	@else
 
-				                            1. To enable 2FA on your account, Open your Google Authenticator App and then scan this QR barcode with your  <br> <strong>OR</strong> <br> use this setup key: <code class="font20">{{ $data['secret'] }}</code><br/>
+				                            1. To enable 2FA on your account, Open your Google Authenticator App and scan this QR barcode with your  <br> <strong>OR</strong> <br> use this setup key: <code class="font20">{{ $data['secret'] }}</code><br/>
 
 				                            {!! $data['google2fa_url'] !!}
 				                            <br/><br/>
